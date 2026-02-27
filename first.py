@@ -1,10 +1,10 @@
 import requests as rex
 ask = int(input("Se quiseres inserir o nome COMPLETO escreve - 1 \nSe quiseres inserir o NOME e o SOBRENOME insere - 2 "))
 if ask==1:
-    nome_completo=input("\nEscreva o nome completo: ").strip()
+    nome_completo=input("\nEscreva o nome completo: ")
 elif ask==2:
-    nome=input("\nEscreva o primeiro nome: ").strip() 
-    apelido=input("Escreva o último nome: ").strip()
+    nome=input("\nEscreva o primeiro nome: ")
+    apelido=input("Escreva o último nome: ")
 
 tipo_person=int(input("\nSe queres encontrar um Formando escreve - 1 \nSe queres encontrar um Formador escreve - 2 "))
 inicio=int(input("\nQueres começar a procurar a partir de que valor? "))
