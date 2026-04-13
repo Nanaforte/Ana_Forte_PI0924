@@ -1,0 +1,10 @@
+#Tipo de dia
+
+dia=input("Escreva o nome de um dia da semana: ").lower()
+
+if dia in ["sábado","sabado","domingo"]:
+    print("Fim de semana")
+elif dia in ["segunda", "terça","terca", "quarta", "quinta", "sexta"]:
+    print("Dia útil")
+else:
+    print("Dia inválido! Por favor, digite um dia da semana válido.")
