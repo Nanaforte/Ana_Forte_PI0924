@@ -1,0 +1,24 @@
+"""
+10% <= 200.00  
+15% <= 500.00
+20% >= 500.00
+ 
+nome cliente
+valor compra
+valor desconto
+valor total a pagar
+"""
+nome=input("Insira o seu nome: ")
+valorcompra=float(input("Insira o valor da sua compra: "))
+ 
+if valorcompra <= 200.00:
+    desconto=valorcompra*0.10
+elif valorcompra  <= 500.00:
+    desconto=valorcompra*0.15
+else:
+    desconto=valorcompra*0.20
+   
+total=valorcompra-desconto
+   
+ 
+print(f"\nNome: {nome}\nCompra: {valorcompra:.2f}€\nDesconto: {desconto:.2f}€\nTotal a pagar: {total:.2f}€")
