@@ -1,0 +1,25 @@
+
+ 
+soma=0
+nts=[]
+ 
+#le 10 nts
+for i in range(10):
+    nt=float(input(f"Nota do aluno {i+1}: "))
+    nts.append(nt)
+    soma+=nt
+ 
+media=soma/10
+ 
+contador=0
+for nt in nts:
+    if nt >= media:
+        contador += 1
+ 
+ 
+print(f"\nMédia: {media:.2f}")
+ 
+if contador > 0:
+    print(f"Alunos com nota igual ou acima da média: {contador}")
+else:
+    print("Nenhum aluno ficou acima da média")
