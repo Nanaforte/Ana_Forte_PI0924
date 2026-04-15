@@ -1,0 +1,16 @@
+nt1=float(input("Nota 1: "))
+nt2=float(input("Nota 2: "))
+nt3=float(input("Nota 3: "))
+ 
+peso1=2
+peso2=3
+peso3=5
+ 
+media=(nt1*peso1 + nt2*peso2 + nt3*peso3) / (peso1+peso2+peso3)
+ 
+print(f"\nMédia: {media:.1f}")
+ 
+if media >= 6:
+    print("Aprovado")
+else:
+    print("Reprovado")
